@@ -12,6 +12,7 @@
     <artifactId>common_util</artifactId>
 
     <dependencies>
+
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
@@ -26,6 +27,7 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
         </dependency>
+
     </dependencies>
 
 </project>

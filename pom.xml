@@ -2,23 +2,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <modules>
         <module>common</module>
         <module>model</module>
         <module>service</module>
     </modules>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
+
     <groupId>com.cYobject</groupId>
     <artifactId>Hospital</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>Hospital</name>
     <description>Hospital</description>
+
     <properties>
         <java.version>1.8</java.version>
         <cloud.version>Hoxton.RELEASE</cloud.version>
@@ -33,9 +37,12 @@
         <aliyun.version>4.6.0</aliyun.version>
         <oss.version>3.15.0</oss.version>
         <jodatime.version>2.10.14</jodatime.version>
+        <flyway.version>8.5.11</flyway.version>
     </properties>
+
     <dependencyManagement>
         <dependencies>
+
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -71,6 +78,7 @@
                 <artifactId>springfox-swagger2</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
+
             <!--swagger ui-->
             <dependency>
                 <groupId>io.springfox</groupId>
@@ -120,6 +128,13 @@
                 <artifactId>joda-time</artifactId>
                 <version>${jodatime.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-core</artifactId>
+                <version>${flyway.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
