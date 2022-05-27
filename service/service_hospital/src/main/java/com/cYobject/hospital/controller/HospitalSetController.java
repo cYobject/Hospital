@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.cYobject.hospital.model.entity.HospitalSet;
 import com.cYobject.hospital.service.IHospitalSetService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/hospital/admin/hospitalSet")
 @RequiredArgsConstructor
+@Tag(name = "HospitalSetController", description = "医院管理")
 public class HospitalSetController {
 
     /**
@@ -36,6 +39,7 @@ public class HospitalSetController {
      * @return 所有数据
      */
     @GetMapping("page")
+    @Operation(summary = "分页查询")
     public Object selectAll(Page<HospitalSet> page, HospitalSet hospitalSet) {
 //        return success(this.hospitalSetService.page(page, new QueryWrapper<>(hospitalSet)));
         return this.hospitalSetService.page(page, new QueryWrapper<>(hospitalSet));

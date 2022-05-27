@@ -25,10 +25,10 @@
             <scope>provided</scope>
         </dependency>
 
-        <!--swagger-->
+        <!--springDoc-->
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-boot-starter</artifactId>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
             <scope>provided</scope>
         </dependency>
 
@@ -44,11 +44,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 
 </project>

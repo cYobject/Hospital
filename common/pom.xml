@@ -39,15 +39,10 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
-        <!--swagger-->
+        <!--springDoc-->
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
         </dependency>
 
     </dependencies>
